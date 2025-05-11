@@ -1,0 +1,657 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+* {
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+    margin: 0px;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root {
+    --text-color: #333333;
+    --cor-principal: #0481FF;
+    --cor-secundaria: #E0EEFC;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #ffffff;
+    width: 100%;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: var(--text-color);
+}
+
+.parte-colorida {
+    color: var(--cor-principal);
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: var(--cor-secundaria);
+    padding: 1rem 2rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    transition: background-color 0.3s, padding 0.3s;
+}
+
+
+nav a {
+    color: black;
+    font-weight: 500;
+    text-decoration: none;
+    margin: 0 16px;
+}
+
+.icone-usuario {
+    font-size: 1.5rem;
+    color: var(--cor-principal);
+    cursor: pointer;
+}
+
+.parte-landing {
+    background: url('https://wallpaperaccess.com/full/2958913.jpg') no-repeat center center fixed;
+    background-color: rgba(255, 255, 255, 0.7);
+    background-blend-mode: lighten;
+    background-size: cover;
+}
+
+.titulo {
+    font-size: 64px;
+}
+
+.descricao {
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 16px;
+}
+
+.botao-primario {
+    background-color: var(--cor-principal);
+    color: white;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.botao-primario:hover {
+    background-color: #0056b3;
+}
+
+.botao-primario:hover i {
+    margin: 0 4px 0 12px;
+}
+
+.botao-primario i {
+    margin: 0 8px;
+    transition: 1s;
+}
+
+.card-evento {
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s;
+    width: 432px;
+    height: 282px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    cursor: pointer;
+    margin-top: 16px;
+}
+
+
+.card-evento-infos {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.card-evento-infos p,
+.card-evento-infos h5 {
+    margin: 0;
+}
+
+@media (min-width: 768px) {
+    .card-evento {
+        height: 500px;
+        width: 600px;
+    }
+
+    .card-evento-infos {
+        bottom: 15px;
+        left: 15px;
+        width: 80%;
+    }
+}
+
+.badge {
+    width: fit-content;
+    background-color: var(--cor-principal);
+    padding: 4px 12px;
+    border-radius: 16px;
+    color: white !important;
+}
+
+
+
+.parte-criar-evento {
+    background-color: var(--cor-secundaria);
+    padding: 64px;
+}
+
+.parte-criar-evento h1 {
+    font-size: 42px;
+    margin-bottom: 16px;
+}
+
+.parte-criar-evento p {
+    text-align: center;
+}
+
+.parte-evento {
+    padding: 64px;
+}
+
+.parte-evento .filtro-eventos .chamada-sessao h1 {
+    font-size: 32px;
+}
+
+.input-busca button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    height: 47px;
+}
+
+.input-busca i {
+    padding: 16.85px;
+    background-color: var(--cor-principal);
+    color: white;
+    border-radius: 0 16px 16px 0;
+}
+
+.input-primario {
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    background-color: transparent;
+    color: black;
+    padding: 12px 20px;
+    border-radius: 16px 0 0 16px;
+    font-weight: 500;
+    text-decoration: none;
+    border: 1px solid #E0EEFC;
+    cursor: pointer;
+    outline: none;
+}
+
+.select-primario {
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    color: black;
+    padding: 12px 20px;
+    border-radius: 16px;
+    font-weight: 500;
+    border: 1px solid #E0EEFC;
+    outline: none;
+    cursor: pointer;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+.select-primario:hover {
+    border-color: var(--cor-principal);
+}
+
+.date-picker-primario {
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    color: black;
+    padding: 12px 20px;
+    border-radius: 16px;
+    font-weight: 500;
+    border: 1px solid #E0EEFC;
+    outline: none;
+    cursor: pointer;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+.date-picker-primario:hover {
+    border-color: var(--cor-principal);
+}
+
+.card-completo-evento {
+    border: 1px solid #E0EEFC;
+    border-radius: 10px;
+}
+
+.card-completo-evento:hover .parte-imagem {
+    background-size: 120%;
+}
+
+.card-completo-evento p {
+    font-size: 14px;
+    font-weight: 400;
+    color: #8491A2;
+}
+
+.parte-imagem {
+    width: 100%;
+    height: 200px;
+    border-radius: 10px 10px 0 0;
+    background-size: 100%;
+    background-position: center;
+    transition: 1s;
+}
+
+.parte-descricao {
+    padding: 16px;
+}
+
+.texto-e-icone {
+    font-size: 14px;
+}
+
+.texto-e-icone i {
+    margin-right: 8px;
+    color: var(--cor-principal);
+}
+
+.parte-imagem p {
+    font-size: 12px;
+    margin-left: 12px;
+}
+
+.botao-detalhes {
+    border: none;
+    font-family: 'Poppins', sans-serif;
+    background-color: #F5F8FB;
+    width: 100%;
+    border-radius: 10px;
+    font-size: 16px;
+    margin-top: 8px;
+    padding: 12px 0px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.botao-detalhes:hover {
+    background-color: var(--cor-principal);
+    color: white;
+}
+
+.parte-evento .mostrar-mais .botao-detalhes {
+    border: 1px solid #c2cfdb;
+    background-color: transparent;
+}
+
+.parte-evento .mostrar-mais .botao-detalhes:hover {
+    border: 1px solid #E0EEFC;
+    background-color: var(--cor-principal);
+}
+
+.parte-calendario {
+    background-color: #F4F7FA;
+    padding: 64px;
+}
+
+.parte-calendario:hover .parte-calendario-direita .calendario {
+    transform: rotateZ(0deg);
+}
+
+.parte-calendario .parte-calendario-esquerda h1 {
+    margin-top: 8px;
+    margin-bottom: 16px;
+    font-size: 32px;
+}
+
+.parte-calendario .parte-calendario-esquerda article {
+    margin-bottom: 16px;
+    color: #65758B;
+}
+
+.parte-calendario .parte-calendario-direita .calendario {
+    background-color: white;
+    padding: 8px;
+    border-radius: 10px;
+    transform: rotateZ(-5deg);
+    transition: 0.5s ease-in-out;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.botao-calendario {
+    width: 300px;
+}
+
+.botao-calendario button i {
+    margin-right: 8px !important;
+}
+
+footer {
+    background-color: #f8f9fa;
+    padding: 2rem;
+    margin-top: 2rem;
+}
+
+footer ul {
+    margin: 0;
+    padding: 0;
+}
+
+footer a {
+    color: var(--text-color);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: var(--cor-principal);
+}
+
+.detalhes-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+    margin-top: 64px;
+}
+
+.informacoes-evento {
+    background-color: var(--background-color);
+    border-radius: 10px;
+    padding: 2rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
+    border: 1px solid #E0EEFC;
+}
+
+.informacoes-evento img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 1.5rem;
+}
+
+.informacoes-evento p {
+    margin: 1rem 0;
+    font-size: 1.1rem;
+    color: var(--text-color);
+}
+
+.informacoes-evento strong {
+    color: var(--cor-principal);
+    margin-right: 0.5rem;
+    font-weight: 600;
+}
+
+.fotos-evento {
+    background-color: var(--background-color);
+    border-radius: 10px;
+    padding: 2rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: 1px solid #E0EEFC;
+}
+
+.fotos-evento h3 {
+    color: var(--cor-principal);
+    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.fotos-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 1.5rem;
+}
+
+.imagem-wrapper {
+    position: relative;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.imagem-wrapper:hover {
+    transform: scale(1.05);
+}
+
+.imagem-wrapper img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+}
+
+.imagem-descricao {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 8px 12px;
+    margin: 0;
+    font-size: 0.9rem;
+    text-align: center;
+    transform: translateY(100%);
+    transition: transform 0.3s ease;
+}
+
+.imagem-wrapper:hover .imagem-descricao {
+    transform: translateY(0);
+}
+
+@media (max-width: 768px) {
+    .detalhes-container {
+        padding: 1rem;
+        margin-top: 80px;
+    }
+
+    .informacoes-evento {
+        padding: 1.5rem;
+    }
+
+    .informacoes-evento img {
+        height: 300px;
+    }
+
+    .informacoes-evento p {
+        font-size: 1rem;
+    }
+
+    .fotos-evento {
+        padding: 1.5rem;
+    }
+
+    .fotos-container {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        gap: 1rem;
+    }
+
+    .imagem-wrapper img {
+        height: 150px;
+    }
+
+    .imagem-descricao {
+        font-size: 0.8rem;
+        padding: 6px 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .detalhes-container {
+        padding: 0.8rem;
+    }
+
+    .informacoes-evento {
+        padding: 1rem;
+    }
+
+    .informacoes-evento img {
+        height: 250px;
+    }
+
+    .fotos-container {
+        grid-template-columns: 1fr;
+    }
+
+    .imagem-wrapper img {
+        height: 200px;
+    }
+
+    .imagem-descricao {
+        font-size: 0.9rem;
+        padding: 8px 12px;
+    }
+}
+
+
+.footer-aluno {
+    border-top: 3px solid #222;
+    background: #fff;
+    margin-top: 40px;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.footer-aluno-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 24px 16px 16px 16px;
+    gap: 32px;
+}
+
+.footer-aluno-left {
+    flex: 2 1 320px;
+    min-width: 260px;
+}
+
+.footer-aluno-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 0.2em;
+}
+
+.footer-aluno-bar {
+    border-bottom: 2px solid #222;
+    margin-bottom: 12px;
+}
+
+.footer-aluno-content {
+    margin-top: 8px;
+}
+
+.footer-aluno-sobre {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.footer-aluno-tab {
+    color: #0481FF;
+    font-weight: bold;
+    text-decoration: none;
+    margin-bottom: 6px;
+    font-size: 1rem;
+}
+
+.footer-aluno-tab.active {
+    border-bottom: 2px solid #0481FF;
+    padding-bottom: 2px;
+}
+
+.footer-aluno-placeholder {
+    height: 12px;
+    background: #d3d3d3;
+    border-radius: 3px;
+    margin-bottom: 6px;
+    width: 90%;
+    max-width: 350px;
+}
+
+.footer-aluno-right {
+    flex: 1 1 220px;
+    min-width: 200px;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.footer-aluno-section-title {
+    color: #0481FF;
+    font-weight: bold;
+    font-size: 1rem;
+    margin-bottom: 6px;
+    display: inline-block;
+}
+
+.footer-aluno-info {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    margin-bottom: 8px;
+}
+
+.footer-aluno-info i.fa-user-circle {
+    font-size: 2rem;
+    color: #0481FF;
+    margin-top: 2px;
+}
+
+.footer-aluno-info div {
+    font-size: 0.98rem;
+    color: #222;
+}
+
+.footer-aluno-redes {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 8px;
+}
+
+.footer-aluno-redes a {
+    color: #222;
+    font-size: 1.3rem;
+    margin-left: 2px;
+    transition: color 0.2s;
+}
+
+.footer-aluno-redes a:hover {
+    color: #0481FF;
+}
+
+@media (max-width: 700px) {
+    .footer-aluno-container {
+        flex-direction: column;
+        gap: 18px;
+        padding: 18px 8px 10px 8px;
+    }
+
+    .footer-aluno-left,
+    .footer-aluno-right {
+        min-width: 0;
+        width: 100%;
+    }
+
+    .footer-aluno-title {
+        font-size: 1.1rem;
+    }
+}
