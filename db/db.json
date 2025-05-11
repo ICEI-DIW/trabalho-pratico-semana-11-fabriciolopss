@@ -1,18 +1,242 @@
-{
-  "usuarios": [
-    {
-      "id": "187cb7e5-e097-4224-8bc7-b610c855e2b1",
-      "login": "admin",
-      "senha": "123",
-      "nome": "Administrador do Sistema",
-      "email": "admin@abc.com"
-    },
-    {
-      "id": "ec37c83d-4b7f-458d-9e10-3fda7d37cd3e",
-      "login": "user",
-      "senha": "123",
-      "nome": "Usuario Comum",
-      "email": "user@abc.com"
-    }
-  ]
-}
+{"eventos" : [
+  {
+    "id": 0,
+    "titulo": "Drinks e Bebes SP",
+    "descricao": "Evento anual de degustação de drinks realizado na terra da garoa, com patrocinio de diversas marcas.",
+    "data": "16 de março de 2025",
+    "hora": "15:00 - 22:00",
+    "local": "Parque Ibirapuera",
+    "categoria": "Comida e drinks",
+    "imagem": "https://www.melhoresdestinos.com.br/wp-content/uploads/2019/02/passagens-aereas-sao-paulo-capa2019-04-820x430.jpg",
+    "imagens_complementares": [
+      {
+        "url": "https://parqueibirapuera.org/wp/wp-content/uploads/2016/03/RN-Ibirapuera-Aerea-20150121-5-1-foto-destacada-resized.jpg",
+        "descricao": "Vista aérea do Parque Ibirapuera, local do evento"
+      },
+      {
+        "url": "https://tourb.com.br/img/lugares/sao-paulo/parque-ibirapuera-1.jpg",
+        "descricao": "Área de lazer do Parque Ibirapuera"
+      },
+      {
+        "url": "https://ibirapuera.org/wp-content/uploads/2020/03/Aaaaarunnersworldbrasil.jpg",
+        "descricao": "Pista de corrida do parque"
+      }
+    ]
+  },
+  {
+    "id": 1,
+    "titulo": "Festival de Música Indie",
+    "descricao": "Festival com bandas independentes de todo o Brasil. Música boa, food trucks e muita energia.",
+    "data": "10 de abril de 2025",
+    "hora": "13:00 - 23:00",
+    "local": "Praça da Estação - BH",
+    "categoria": "Musical",
+    "imagem": "https://www.cnnbrasil.com.br/wp-content/uploads/sites/12/2023/09/lollapalooza-2024-ingressos.jpg",
+    "imagens_complementares": [
+      {
+        "url": "https://www.infomoney.com.br/wp-content/uploads/2025/03/cidadedesaopaulo.com-lollapalooza-brasil-2025-cidadedesaopaulo.com-lollapalooza-brasil-2025-lollapalooza-publico-250322-fotos-daniel-deak-0043.jpg?fit=1250%2C833&quality=50&strip=all",
+        "descricao": "Público animado no festival"
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Lollapalooza_2015.JPG/960px-Lollapalooza_2015.JPG",
+        "descricao": "Palco principal do festival"
+      },
+      {
+        "url": "https://mobilidade.estadao.com.br/wp-content/uploads/2025/03/lollapalooza_reproducao-.jpg.webp",
+        "descricao": "Área de food trucks do evento"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "titulo": "Corrida Solidária",
+    "descricao": "Evento esportivo com percurso de 5km e 10km. Parte da renda será doada para ONGs locais.",
+    "data": "21 de junho de 2025",
+    "hora": "07:00 - 12:00",
+    "local": "Lagoa da Pampulha",
+    "categoria": "Esportivo",
+    "imagem": "https://mobilidade.estadao.com.br/wp-content/uploads/2023/12/Paulo-Pinto-Agencia-Estado-1.jpg",
+    "imagens_complementares": [
+      {
+        "url": "https://veja.abril.com.br/wp-content/uploads/2016/12/sao-silvestre-pelotao-geral.jpg?quality=70&strip=info&crop=1&resize=1080,565",
+        "descricao": "Corredores na largada da prova"
+      },
+      {
+        "url": "https://static.historiadomundo.com.br/conteudo/images/a-corrida-sao-silvestre-ganhou-varias-modificacoes-ao-longo-sua-historia-5c24b8c03c73c.jpg",
+        "descricao": "Trajeto da corrida"
+      },
+      {
+        "url": "https://f.i.uol.com.br/fotografia/2023/12/31/170402477265915ac4708c4_1704024772_3x2_rt.jpg",
+        "descricao": "Premiação dos vencedores"
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "titulo": "Feira Vegana",
+    "descricao": "Gastronomia 100% vegana com expositores locais e oficinas de culinária.",
+    "data": "05 de maio de 2025",
+    "hora": "10:00 - 18:00",
+    "local": "Mercado Novo",
+    "categoria": "Comida e drinks",
+    "imagem": "https://bhaz.com.br/wp-content/uploads/2022/05/feira-vegana-paraiso-veg-1.jpg",
+    "imagens_complementares": [
+      {
+        "url": "https://images.sympla.com.br/6395da53b2e96-lg.jpg",
+        "descricao": "Expositores da feira"
+      },
+      {
+        "url": "https://divirtasecuritiba.com/wp-content/uploads/2024/04/banner-feed.png?w=833",
+        "descricao": "Oficina de culinária vegana"
+      },
+      {
+        "url": "https://atarde.com.br/img/Artigo-Destaque/1310000/Feira-Vegana-em-Salvador-faz-edicao-de-Dia-das-Mae0131570400202504251738.jpg?xid=6632270",
+        "descricao": "Degustação de produtos veganos"
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "titulo": "Sarau Literário",
+    "descricao": "Apresentações de poesia, música e performances teatrais.",
+    "data": "12 de julho de 2025",
+    "hora": "19:00 - 22:00",
+    "local": "Centro Cultural UFMG",
+    "categoria": "Cultural",
+    "imagem": "https://diariodonordeste.verdesmares.com.br/image/contentid/policy:1.3243868:1655231542/Sarau-do-Sublime-1.jpeg",
+    "imagens_complementares": [
+      {
+        "url": "https://www.coutomagalhaes.to.gov.br/storage/posts-images/2022/04/whatsapp-image-2022-04-26-at-18-28-28.jpg",
+        "descricao": "Recitação de poesia"
+      },
+      {
+        "url": "https://www.fundacaodecultura.ms.gov.br/wp-content/uploads/2022/07/sarau_noparque.jpeg",
+        "descricao": "Performance teatral"
+      },
+      {
+        "url": "https://www.ufms.br/wp-content/uploads/2023/05/Sarau_na_Sombra_portal.jpg",
+        "descricao": "Apresentação musical"
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "titulo": "Palestra Futuro da Tecnologia",
+    "descricao": "Debate com especialistas sobre IA, blockchain e cibersegurança.",
+    "data": "30 de agosto de 2025",
+    "hora": "09:00 - 17:00",
+    "local": "Auditório do SENAI",
+    "categoria": "Outros",
+    "imagem": "https://tonyventura.com.br/palestra-tecnologia-blog/wp-content/uploads/2019/12/Palestrante-de-Tecnologia-em-Florianopolis-Tony-Ventura-1-1024x684.jpg",
+    "imagens_complementares": [
+      {
+        "url": "https://www.tribunaribeirao.com.br/wp-content/uploads/2024/09/Evento-1920x1280.jpg",
+        "descricao": "Palestra sobre Inteligência Artificial"
+      },
+      {
+        "url": "https://sedu.es.gov.br/Media/sedu/_Profiles/c4d8c6e6/982b8e1d/WhatsApp%20Image%202023-06-01%20at%2010.40.35.jpeg?v=638215752257595800",
+        "descricao": "Workshop de Blockchain"
+      },
+      {
+        "url": "https://educacao.sme.prefeitura.sp.gov.br/wp-content/uploads/2024/10/11o-Seminario-e-Mostra-de-Tecnologias-%E2%80%93-Acao-Promovendo-a-Reflexao.jpg",
+        "descricao": "Painel sobre Cibersegurança"
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "titulo": "Manifesta BH",
+    "descricao": "Ato político-cultural pela democracia com intervenções artísticas e debates.",
+    "data": "07 de setembro de 2025",
+    "hora": "14:00 - 20:00",
+    "local": "Parque Municipal",
+    "categoria": "Político",
+    "imagem": "https://prefeitura.pbh.gov.br/sites/default/files/styles/slideshow/public/estrutura-de-governo/bh%20not%20Virada%20Cultural%20-%20Arte%20Divulga%C3%A7%C3%A3o.jpg?itok=_kG_VJkE",
+    "imagens_complementares": [
+      {
+        "url": "https://jornalvozativa.com/wp-content/uploads/2023/06/jornal-voz-ativa-ouro-preto-mg-minas-gerais-op-materia-virada-cultural-bh-2023-recebe-inscricoes-de-artistas-ate-amanha-15-14062023152436-scaled.jpg",
+        "descricao": "Intervenção artística no parque"
+      },
+      {
+        "url": "https://cenariominas.com.br/wp-content/uploads/2024/08/main_main_viradabh_chama_o_sindico_foto_leo_lara_0309.jpg",
+        "descricao": "Debate político-cultural"
+      },
+      {
+        "url": "https://pescaeturismo.com.br/uploads/2024/08/alteracoes-no-transito-e-destaques-da-9a-edicao-da-virada-cultural-bh.webp",
+        "descricao": "Apresentação cultural"
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "titulo": "Anime Festival",
+    "descricao": "Cosplays, estandes de produtos geek e competições de games.",
+    "data": "15 de setembro de 2025",
+    "hora": "11:00 - 20:00",
+    "local": "Expominas",
+    "categoria": "Cultural",
+    "imagem": "https://www.animefestival.com.br/2016/imagens/exca.jpg",
+    "imagens_complementares": [
+      {
+        "url": "https://bhaz.com.br/wp-content/uploads/2023/11/Anime-Festival-1.jpg",
+        "descricao": "Concurso de cosplay"
+      },
+      {
+        "url": "https://www.animefestival.com.br/fotos/party09sabado/images/IMG_2312.jpg",
+        "descricao": "Estande de produtos geek"
+      },
+      {
+        "url": "https://image.portaldacidade.com/unsafe/https://bucket.portaldacidade.com/sumare.portaldacidade.com/img/news/2024-08/campinas-anime-fest-agita-a-cidade-com-cultura-geek-e-cosplay-66c0b39573167.webp",
+        "descricao": "Competição de games"
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "titulo": "Oficina de Cerâmica",
+    "descricao": "Aula prática com artista convidada. Materiais inclusos.",
+    "data": "28 de outubro de 2025",
+    "hora": "14:00 - 18:00",
+    "local": "Ateliê Arte da Terra",
+    "categoria": "Cultural",
+    "imagem": "https://blog.hidekohonma.com.br/wp-content/uploads/2018/11/Hideko-Honma-oficina-alunos-waldorf-atelier-pecas-1140x641.jpg",
+    "imagens_complementares": [
+      {
+        "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2_slUSVNwqiNfIoI1OeWz27aQPPU518ZRFw&s",
+        "descricao": "Alunos trabalhando na cerâmica"
+      },
+      {
+        "url": "https://www.matinaljornalismo.com.br/wp-content/uploads/2021/07/ceramica_vila_flores-foto_ricardo_ara-2-720x475.jpg",
+        "descricao": "Peças produzidas na oficina"
+      },
+      {
+        "url": "https://assets.brasildefato.com.br/2024/09/image_processing20210726-4131-xykdwv.jpeg",
+        "descricao": "Demonstração da artista convidada"
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "titulo": "Open Bar Sunset",
+    "descricao": "Festa open bar com DJs e vista para o pôr do sol.",
+    "data": "02 de novembro de 2025",
+    "hora": "16:00 - 00:00",
+    "local": "Rooftop Savassi",
+    "categoria": "Comida e drinks",
+    "imagem": "https://images.sympla.com.br/650c546006fae.jpg",
+    "imagens_complementares": [
+      {
+        "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTd4sqOA2NoFmlHahiWwvMSF-uY_1IC_VOAwg&s",
+        "descricao": "Vista do pôr do sol no rooftop"
+      },
+      {
+        "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXebVRs6yjzwcWwoVvqs7X1EUTUcq-jdwNRA&s",
+        "descricao": "Área do bar"
+      },
+      {
+        "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBUVgt7TRFYWsCZYN5XYSQA-GS6dMSshRX0g&s",
+        "descricao": "DJ tocando no evento"
+      }
+    ]
+  }
+]}
